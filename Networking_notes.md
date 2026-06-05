@@ -14,7 +14,8 @@ When a user requests your site, the CDN serves it from the server closest to the
   
 **Subnet:**  Dividing large network into small network  
 
-**CIDR (Classless Inter-Domain Routing):** its a compact way to write IP address ranges and their network masks.  
+**CIDR (Classless Inter-Domain Routing):**  
+its a compact way to write IP address ranges and their network masks.  
 2<sup>32-n</sup>
 if n=4 the CIDR notation will be /4
 if n=28 the cidr notation will be /28, total number of ip address will be 16  
