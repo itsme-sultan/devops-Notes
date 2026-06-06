@@ -47,6 +47,7 @@ e.g: for subnet 192.168.1.0/28
 6. **Session layer**
 7. **Presentation layer**
 8. **Application Layer**
+    
    ---
    
 
