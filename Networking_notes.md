@@ -55,7 +55,8 @@ Step 02 — If not in cache, the hosts file is checked
 Step 03 — If still not found, the query goes to the ISP's DNS Resolver  
 Step 04 — The resolver does a recursive search: Root Server → TLD Server → Authoritative Name Server, collecting the real IP
 Step 05 — The DNS Resolver returns the final IP to the computer  
-![dns working](working-of-dns.webp)
+
+![dns working](Working of dns.PNG)
    
 
 
