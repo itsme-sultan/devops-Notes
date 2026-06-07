@@ -56,7 +56,7 @@ Step 03 — If still not found, the query goes to the ISP's DNS Resolver
 Step 04 — The resolver does a recursive search: Root Server → TLD Server → Authoritative Name Server, collecting the real IP  
 Step 05 — The DNS Resolver returns the final IP to the computer  
 
-![dns working](Working-of-dns.PNG)
+![dns working](Images/Working-of-dns.PNG)
 
 1. User Request  
 When we type a domain name like https://www.geeksforgeeks.org/ into our browser, our computer starts the process of finding the corresponding IP address needed to connect to the website.
