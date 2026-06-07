@@ -49,6 +49,12 @@ e.g: for subnet 192.168.1.0/28
 8. **Application Layer**
     
    ---
+## DNS(Domain name System):
+Step 01 — Browser requests a URL and the local cache is checked first  
+Step 02 — If not in cache, the hosts file is checked  
+Step 03 — If still not found, the query goes to the ISP's DNS Resolver  
+Step 04 — The resolver does a recursive search: Root Server → TLD Server → Authoritative Name Server, collecting the real IP (all 8 sub-steps preserved)  
+Step 05 — The DNS Resolver returns the final IP to the computer
    
 
 
