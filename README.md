@@ -1,5 +1,3 @@
-# devops-learning
-This is my first git repository.
-<br>
-Author -Mohammad  Sultan Ansari
+# Welcome to devops-learning
+This is the self- learning notes
 
