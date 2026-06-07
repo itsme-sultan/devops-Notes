@@ -53,10 +53,40 @@ e.g: for subnet 192.168.1.0/28
 Step 01 — Browser requests a URL and the local cache is checked first  
 Step 02 — If not in cache, the hosts file is checked  
 Step 03 — If still not found, the query goes to the ISP's DNS Resolver  
-Step 04 — The resolver does a recursive search: Root Server → TLD Server → Authoritative Name Server, collecting the real IP
+Step 04 — The resolver does a recursive search: Root Server → TLD Server → Authoritative Name Server, collecting the real IP  
 Step 05 — The DNS Resolver returns the final IP to the computer  
 
 ![dns working](Working-of-dns.PNG)
+
+1. User Request  
+When we type a domain name like https://www.geeksforgeeks.org/ into our browser, our computer starts the process of finding the corresponding IP address needed to connect to the website.
+
+2. Check Local Cache  
+The first place our system looks is in its local cache, which may include:  
+. Browser Cache  
+. Operating System (OS) Cache  
+. Router Cache
+
+3. Check Host Files  
+If the IP address is not in the local cache, the system may check host files, which are manually configured mappings of domain names to IP addresses. This is rare in modern systems, but it might still be used for certain network configurations.
+
+4. Query DNS Resolver  
+If no IP address is found locally, the request is sent to a DNS Resolver. The Resolver is a server provided by our Internet Service Provider (ISP) or a public DNS service like Google DNS (8.8.8.8) or Cloudflare (1.1.1.1). The Resolver acts as the intermediary that communicates with various DNS servers to find the IP address.
+
+5. Contact the Root Server  
+Resolver first contacts the Root DNS Server which is the starting point for DNS lookups. The Root server doesn’t know the exact IP address of geeksforgeeks.org but directs the query to the Top-Level Domain (TLD) Server responsible for .org.
+
+6. Query TLD Server  
+Resolver sends the query to the TLD Server for .org domains. The TLD server handles domain names ending in .org and knows where to find the authoritative nameserver for geeksforgeeks.org.
+
+7. Query the Authoritative Server  
+The Resolver then queries the authoritative nameserver for geeksforgeeks.org. This server is responsible for storing DNS records for the domain, including the mapping of the domain name to its IP address.
+
+8. Retrieve the IP Address  
+Authoritative nameserver responds to the Resolver with the exact IP address (e.g., 192.0.2.1) for geeksforgeeks.org.
+
+9. Return IP Address to Computer  
+Resolver receives the IP address from the authoritative nameserver and sends it back to our computer. At this point, our computer knows how to connect to the website.
    
 
 
