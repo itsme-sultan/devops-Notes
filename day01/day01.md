@@ -1,1 +1,0 @@
-This is task of day01.
