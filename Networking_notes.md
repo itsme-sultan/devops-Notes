@@ -2,7 +2,7 @@
 -**CDN** (Content delivery network) : server which serve static data like images and videos across servers worldwide to reduce latency and improve speed. CDN caches copies of your content across multiple servers worldwide.  
 When a user requests your site, the CDN serves it from the server closest to them, reducing latency and improving speed.
 
--**Cache**: temprary stoeage for static data. 
+-**Cache**: temprary stoeage for static data.  
 -**Edge location** :  Specific sites where cached data is stored
 
 **Internet Protocal** -  
@@ -28,6 +28,7 @@ e.g: for subnet 192.168.1.0/28
 * broadcast ip address :192.168.1.15  
 * First Usable IP:192.168.1.1  
 * Last Usable IP : 192.168.1.14
+* Subnet mask : 255.255.255.240
 
 ## 🤝 OSI(open system interconnection) Model:  
 1. **Physical layer**  
