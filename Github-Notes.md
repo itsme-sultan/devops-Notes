@@ -16,12 +16,13 @@ Effect: Rewrites commit history so it looks like your work was built directly on
 Creates linear history by rewriting commits. 
 Advisable to use in local branch only, do not rebase shared branch since it rewrite the history.  
 
+```bash
 A → B → C (main)  
      \  
-      D → E (feature)  
-      
+      D → E (feature)
 After Rebase (git checkout feature & git rebase main or origin/main)  
-A → B → C → D' → E'  
+A → B → C → D' → E'
+```
 
 Cons:  
 Rewrites commit hashes (dangerous if branch is shared).  
@@ -31,14 +32,16 @@ Should only be used on local/private branches
 Definition: Combines two branches by creating a new commit that ties their histories together.  
 Effect: Preserves the full history, including all diverging paths.  
 
+```bash
 A → B → C (main)  
      \  
       D → E (feature)  
 
-After `git merge feature`  
+After git merge feature
 A → B → C → M  
      \     /  
       D → E
+```
 
 Pros:  
 Safe, non-destructive (no history rewrite).  
