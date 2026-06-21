@@ -18,7 +18,7 @@ Advisable to use in local branch only, do not rebase shared branch since it rewr
 
 ## `git merge --ff-only feature`  
 it sync the main branch with feature branch or just slide the commit of the feature branch to the tip of the main branch to get sync.  
-ff is only possible when there is no commit in new branch since feature branch get diverged.  
+ff is only possible when there is no commit in main branch since feature branch get diverged.  
 ```bash
 git checkout main
 git merge --ff-only feature
