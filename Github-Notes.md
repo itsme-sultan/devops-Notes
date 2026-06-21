@@ -31,6 +31,8 @@ Should only be used on local/private branches
 ## `git merge`  
 Definition: Combines two branches by creating a new commit that ties their histories together.  
 Effect: Preserves the full history, including all diverging paths.  
+Note : If we are merging features branch changes in main and there is no new commit in the manin brnach since feature branch  
+get diverge then it mereg as a fast forward and their will be no new commit.
 
 ```bash
 A → B → C (main)  
